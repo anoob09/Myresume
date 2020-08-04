@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/anup-swarnkar-599a90144/}{\Large Anup Swarnkar}} & Email :  \href{mailto:aswarnkar.anup.swarnkar@gmail.com}{aswarnkar.anup.swarnkar@gmail.com}\\
+  \href{https://www.linkedin.com/in/anup-swarnkar-599a90144/}{LinkedIn |} 
+  \href{https://github.com/anoob09/}{Github}& Mobile :  +91-706-723-1367 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Institute Of Technical Education and Research}{Bhubaneswar, India}
+      {Affl. Siksha 'O' Anusandhan University; B.Tech in Computer Science;  GPA: 9.35| 8.0/10}{August 2016 - June 2020}
+    \resumeSubheading
+      {O. P. Jindal School}{Raigarh, India}
+      {Maths + IP; Central Board of Secondary Education); 86.2\%
+}{May 2014 - April 2016
+}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{}{
+     \textbf{Languages}{: Python, Java, Javascript, SQL, NoSQL, HTML, CSS, C}
+     }
+ \resumeSubItem{}{
+     \textbf{Technologies and Frameworks}{:DSA, Android Studio, Django, Deep Learning, Flask, REST APIs}
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Racetrack.ai}{Bangalore}
+      {Software Development Engineer - Full time}{February 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Working on the main product of the company i. e. Marvin (Charbot), also working with Research and Development team to develop new upcoming products}
+        \resumeItem{}
+        {Handling backend services including Database, CRM, Training and deploying NLP moels}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Racetrack.ai}{Bangalore}
+      {Research and Development - Intern}{August 2019 - February 2020}
+      \resumeItemListStart
+      \resumeItem{}
+          {Part of the Research and Development team that brainstormed 2 AI applications for POC, also built 2 applications during this period for personal growth}
+        \resumeItem{}
+          {Worked as Full Stack Web and Android developer, built 4 RESTful applications from scratch, trained Deep Learnig models}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IIT}{Kharagpur}
+      {Research and Web Development - Intern}{May 2018 - June 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed Web App, named Mammography Image Corpus, for collection of data for Diagnosis and Research of Breast Cancer.}
+         \resumeItem{}
+          {Applied Machine Learning Algorithms on the data collected via Mammography Image Corpus.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Sputify - New way to discover music}
+      { - A RESTful Android Application with Flask as backend. The application shows what songs current users are/were listening around them on Spotify. The application uses OAuth2.0, Spotify Android SDK and Spotify API to get data from user's Spotfiy account.}
+    \resumeSubItem{Car Damage Detection}
+      { - This project makes the minor insurance claim for vehicle damage completely automatic. The user has to click pictures of the car via an android application, the server runs different Deep Learning techniques on the images and gives a BOM Summary which includes Type of Damage, Area of Damage and Cost of Repair. This was a team project.}
+      \resumeSubItem{Automatic Licence Plate Recognition}
+      { - This application takes images/video of a car as input and gives Licence Plate Number of the car as the output. The application is able detect multiple car and licence plates from a single frame. For POC, a Web Application was created with a Flask App as backend. This was a solo project.}
+      \resumeSubItem{Mammography Image Corpus}
+      { - This is a Web Application that can be used to gather data for Diagnosis and Research of Breast Cancer. The application consists of different tools including an image annotator. All the data fed during diagnosis of the patient is fed into the application and stored in a ML friendly manner in the database.}
+  \resumeSubHeadingListEnd 
+
+%-------PUBLICATIONS------------------  
+\section{Publications}
+ \resumeSubHeadingListStart
+  \resumeSubItem{}{Swarnkar A, Moin S S,
+  \textbf{Mammography Image Corpus}, 3rd Internation Conference on Advanced Computing and International Engineering, (ICACIE), 2018.}
+ \resumeSubHeadingListEnd
+
+%---------------------------------------
+\section{Accomplishments}
+ \resumeSubHeadingListStart
+ \resumeSubItem{}{
+    \textbf{Winner}{ - Research Paper Presentation Contest} {, Advaita 2019, IIIT Bhubaneswar.}
+    }
+    \resumeSubItem{}{
+    \textbf{Best Paper}{ - at ICACIE in Student's Chapter}{, 2018. }
+    }
+    \resumeSubItem{}{
+    \textbf{Runner up}{ - Debate Competition, O. P. Jindal School, 2015.}
+    }
+    \resumeSubItem{}{
+    \textbf{Winner}{ - Call Of Duty - Modern Warfare, Championship, ITER 2017.}
+    }
+    
+ \resumeSubHeadingListEnd
+%-------------------------------------
+%---------Teaching/Leadership Experience-------
+
+\end{document}
+
